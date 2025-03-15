@@ -1,9 +1,9 @@
 import string
+from typing import Counter
 text = open('text.txt', encoding='utf-8').read()
 lower_case = text.lower()
 cleaned_text = lower_case.translate(str.maketrans('', '', string.punctuation))
 tokenized_word = cleaned_text.split()
-print(tokenized_word)
 
 
 stop_words = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself",
@@ -33,3 +33,18 @@ print(final_words)
 
 # 2) If word is present -> Add the emotion to emotion_list
 # 3) Finally count each emotion in the emotion list
+
+
+emotion_list = []
+with open('emotion.txt', 'r') as file:
+    for line in file:
+        clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
+        word, emotion = clear_line.split(':')
+
+        if word in final_words:
+            emotion_list.append(emotion)
+
+
+print(emotion_list)
+w = Counter(emotion_list)
+print(w)
