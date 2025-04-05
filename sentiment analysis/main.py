@@ -1,11 +1,21 @@
 import string
 from typing import Counter
+from collections import Counter
+from nltk.tokenize import word_tokenize
 import matplotlib.pyplot as plt
 
+
+# reading text file
 text = open('text.txt', encoding='utf-8').read()
+
+# coverting to lowercase
 lower_case = text.lower()
+
+# removing punctuations
 cleaned_text = lower_case.translate(str.maketrans('', '', string.punctuation))
-tokenized_word = cleaned_text.split()
+
+# spliting text into words
+tokenized_word = word_tokenize(cleaned_text, "english")
 
 
 stop_words = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself",
