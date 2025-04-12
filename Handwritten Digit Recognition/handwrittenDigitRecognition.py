@@ -29,3 +29,20 @@ import tensorflow as tf
 
 model = tf.keras.models.load_modal('handwritten.model')
 
+
+image_number = 1
+
+while os.path.isfile(f"Digit/Digits{image_number}.png"):
+    try:
+        img = cv2.imread(f"Digit/Digits{image_number}.png")[:, :, 0]
+        img = np.invert(np.array([img]))
+        prediction = model.rpedict(img)
+        print(f"This digit is probably a {np.argmax(prediction)}")
+        plt.imshow(img[0], cmap=plt.cm.binary)
+        plt.show()
+
+    except:
+        print("Error!")
+
+    finally:
+        image_number += 1
