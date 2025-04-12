@@ -41,7 +41,15 @@ clf = RandomForestClassifier(n_jobs=-1)
 clf.fit(x_train, y_train)
 clf.score(x_test, y_test)
 
-
+email_to_classify = df.text.values[15]
 email_text = email_to_classify.lower().translate(str.maketrans('', '', string.punctuation)).split()
 email_text = [stemmer.stem(word) for word in text if word not in stopwords_set]
 email_text = ' '.join(email_text)
+
+
+email_corpus = [email_text]
+
+x_email = vectorizer.transform(email_corpus)
+clf.predict(x_email)
+
+df.label_num.iloc[10]
