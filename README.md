@@ -40,4 +40,15 @@ This repository contains the following AI/ML implementations:
 
  - Showcases practical ML application
 
+## 🛠️ Technologies Used
+ - Python 3.x
 
+ - OpenCV (for face detection)
+
+ - TensorFlow/Keras (for digit recognition)
+
+ - NLTK/TextBlob (for NLP tasks)
+
+ - Scikit-learn (for traditional ML models)
+
+ - Pandas/Numpy (for data handling)
