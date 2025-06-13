@@ -25,3 +25,19 @@ This repository contains the following AI/ML implementations:
  - Classifies text as positive/negative sentiment
 
  - Uses NLTK or similar NLP libraries
+
+### 4. ChatBot 💬
+ - Rule-based or simple AI conversational agent
+
+ - Demonstrates basic NLP and dialog management
+
+ - Can be extended with more advanced NLP models
+
+### 5. Spam Mail Detection 📧
+ - Email classification (spam/ham) system
+
+ - Implements text preprocessing and classification algorithms
+
+ - Showcases practical ML application
+
+
