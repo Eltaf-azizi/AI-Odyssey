@@ -61,4 +61,16 @@ This repository contains the following AI/ML implementations:
  - pip package manager
 
 
+## Installation
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/AI-Odyssey.git
+cd AI-Odyssey
+```
+2. Install required packages:
+
+```bash
+pip install -r requirements.txt
+```
 
