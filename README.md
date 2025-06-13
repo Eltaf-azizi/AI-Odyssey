@@ -52,3 +52,13 @@ This repository contains the following AI/ML implementations:
  - Scikit-learn (for traditional ML models)
 
  - Pandas/Numpy (for data handling)
+
+## 🚀 Getting Started
+### Prerequisites
+
+ - Python 3.7+
+
+ - pip package manager
+
+
+
