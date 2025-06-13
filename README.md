@@ -11,3 +11,17 @@ This repository contains the following AI/ML implementations:
 
  - Foundation for more advanced facial recognition systems
 
+
+### 2. Handwritten Digit Recognition 🔢
+ - MNIST dataset-based digit classification
+
+ - Implemented using TensorFlow/Keras
+
+ - Demonstrates basic image classification with neural networks
+
+### 3. Sentiment Analysis 😊😠
+ - Natural Language Processing application
+
+ - Classifies text as positive/negative sentiment
+
+ - Uses NLTK or similar NLP libraries
