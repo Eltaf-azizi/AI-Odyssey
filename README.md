@@ -74,3 +74,21 @@ cd AI-Odyssey
 pip install -r requirements.txt
 ```
 
+## 📊 Project Structure
+```text
+AI-Odyssey/
+│
+├── FaceDetection/          # Face detection implementation
+├── DigitRecognition/       # Handwritten digit classification
+├── SentimentAnalysis/      # Text sentiment classifier
+├── ChatBot/                # Conversational agent
+├── SpamDetection/          # Email spam classifier
+│
+├── README.md               # This file
+├── requirements.txt        # Python dependencies
+└── Untitled.png            # Sample image/resource
+```
+
+
+
+
